@@ -1,0 +1,94 @@
+/* CREATE FORM */
+
+form input {
+    border: none;
+}
+
+.create-form {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.fecha-nacimiento {
+    margin-bottom: 25px;
+    width: 90%;
+    
+}
+
+.fecha-nacimiento label{
+    margin-bottom: 15px;
+    
+}
+
+.control-formulario label{
+    margin-bottom: 8px;
+    font-style: italic;
+    display: block;
+}
+
+.select-form {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.titulo{
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight:bold;
+}
+
+.label-select input{
+    margin-right: 5px;
+    font-style:normal;
+}
+
+.label-select{
+    padding-left: 18px;
+    font-style:normal;
+    display: block;
+    padding-top: 5px;
+}
+
+.control {
+    display: flex;
+    padding: 12px 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #666;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+
+}
+
+.boton-formulario {
+    display: flex;
+    background-color: #3483FA;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media (min-width: 768px) {
+
+    .control-formulario, .fecha-nacimiento, .select-form {
+        width: 40%;
+    }
+}

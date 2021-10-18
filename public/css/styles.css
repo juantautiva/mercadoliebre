@@ -1,0 +1,376 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+/*HEADER*/
+header {
+    
+   
+    background-color: #EAC926;
+    
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+div.top-header {
+    padding: 2%;
+}
+
+div.resp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+div.form {
+    display: flex;
+    padding: 10px 5px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #666;
+    justify-content: space-between;
+}
+
+div.input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .buscar {
+    width: 90%;
+    border: none;
+}
+
+header img.logo {
+    width: 100%;
+    padding: 10px;;
+}
+
+header .burger-menu {
+    text-align: center;
+    background-color: #3F78CE;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+}
+
+header .menu {
+    display: none;
+}
+
+/*BANNER*/
+
+/* .banner {
+    margin-top: 153px;
+} */
+
+.banner img {
+    width: 100%;
+}
+
+/*MAIN*/
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main h2 {
+    color: #666;
+    margin: 5px;
+}
+
+main section img {
+    width: 100%;
+}
+
+.fa-truck {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+}
+
+main section .destacado {
+    padding: 10px 0px 0px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+
+main section h2 {
+    font-size: 24px;
+}
+
+main section .descripcion-producto {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+main section .price {
+    font-size: 18px;
+    width: 60%;
+}
+
+main section .discount {
+    font-size: 16px;
+    color: #39b54a;
+    width: 40%;
+}
+
+main section .descripcion {
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 11px solid #39b54a;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section .img-producto {
+    text-align: center;
+}
+/*FOTTER*/
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+footer h4, footer p {
+    padding: 2px 20px;
+    color: #666;
+}
+
+footer article {
+    width: 100%;
+}
+
+footer article i{
+    font-size: 2rem;
+    margin: 10px;
+    color: #3F78CE;
+}
+
+
+
+/*MEDIA QUERY*/
+
+@media (min-width: 361px) {
+   /*  main section .descripcion {
+        display: none;
+    } */
+    main section div.visita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section div.ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section .destacado {
+        width: 45%;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+   
+   /*  main section .destacado {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } */
+
+    header .menu {
+        display: block;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    div.top-header {
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+    }
+
+    header .copy-header {
+        max-width: 350px;
+        text-align: left;
+    }
+
+    header nav.menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav.menu ul {
+        display: flex;
+        margin: 15px;
+    }
+
+    header nav.menu ul li a {
+        text-decoration: none;
+        color: #000;
+        margin: 7px;
+    }
+
+    header nav.menu ul li a i {
+        color: #0044AA;
+        margin-left: 5px;
+    }
+
+    main section div.visita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section div.ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section .destacado {
+        width: 40%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer article.footer-article {
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    footer .copy{
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+  
+    header img.logo {
+        width: 250px;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    header .top-header, header .menu {
+        max-width: 1200px;
+        margin:auto
+    }
+    header nav.menu ul li {
+        margin: 0px 10px;
+    }
+    header nav.menu ul li a {
+        font-size: 19px;
+    }
+
+    header .copy-header {
+        margin: 0px;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    main section .descripcion {
+        display: block;
+    } 
+    .descripcion {
+        visibility: hidden;
+        transition: all 10ms ;
+    }
+    
+    article.destacado:hover .descripcion-producto .descripcion{
+        visibility: visible;   
+    }
+
+    main section .destacado {
+        width: 22%;
+        transition: all 10ms ;
+    }
+
+    article.destacado:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .fa-truck {
+        transition: all 10ms ;
+    }
+
+    article.destacado:hover .fa-truck {
+        transform: rotateZ(-90deg);
+    }
+
+  
+
+    footer article.footer-article,  footer .fas{
+        font-size: 1rem;
+    }
+
+    footer .fas{
+        font-size: 2rem;
+    }
+
+    footer article.footer-article h4{
+        padding: 10px 0px;
+    }
+
+    footer .copy{
+        font-size: 1rem;
+    }
+
+    footer h3, footer p{
+        font-size: 1rem;
+    }
+
+}
