@@ -21,5 +21,5 @@ app.get('/new-product', (req, res) => {
     res.sendFile(path.join(__dirname, './views/create-product.html'));
 })
 
-app.listen(PUERTO, () => console.log(`Servidor escuchando por el puerto ${PUERTO}`)
+app.listen(process.env.PORT || PUERTO, () => console.log(`Servidor escuchando por el puerto ${PUERTO}`)
 );
