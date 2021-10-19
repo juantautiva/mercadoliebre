@@ -135,6 +135,7 @@ main section .discount {
     font-size: 16px;
     color: #39b54a;
     width: 36%;
+    padding-left: 10px;
 }
 
 main section .descripcion {
